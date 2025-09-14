@@ -12303,7 +12303,7 @@ local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local LocalPlayer = Players.LocalPlayer
 
-function startWalkFling("Players")
+addcmd('walkfling',{},function startWalkFling("Players")
     local Root = char:WaitForChild("HumanoidRootPart")
     local Humanoid = char:WaitForChild("Humanoid")
     
