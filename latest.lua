@@ -4636,6 +4636,7 @@ CMDs[#CMDs + 1] = {NAME = 'norender', DESC = 'Disable 3d Rendering to decrease t
 CMDs[#CMDs + 1] = {NAME = 'render', DESC = 'Enable 3d Rendering'}
 CMDs[#CMDs + 1] = {NAME = 'use2022materials / 2022materials', DESC = 'Enables 2022 material textures'}
 CMDs[#CMDs + 1] = {NAME = 'unuse2022materials / un2022materials', DESC = 'Disables 2022 material textures'}
+CMDs[#CMDs + 1] = {NAME = 'walkfling' DESC = 'TERBANG'}
 -- New Dark Networks Commands
 CMDs[#CMDs + 1] = {NAME = 'nolighting / nolight', DESC = 'Disables all lighting in the game'}
 wait()
@@ -12302,7 +12303,7 @@ local Players = game:GetService("Players")
 local RunService = game:GetService("RunService")
 local LocalPlayer = Players.LocalPlayer
 
-local function startWalkFling(char)
+function startWalkFling("Players")
     local Root = char:WaitForChild("HumanoidRootPart")
     local Humanoid = char:WaitForChild("Humanoid")
     
